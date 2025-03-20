@@ -11,15 +11,6 @@ app.get('', (req, res) => {
     res.send('👍👍👍👍👍')
 })
 
-
-// renderApi.auth('rnd_Co6hnlBBegQUBehBt4s8LqAP98fI');
-// renderApi.listServices({includePreviews: 'true', limit: '20'})
-//   .then(({ data }) => console.log(data))
-//   .catch(err => console.error(err));
-
-
-//   const API_KEY = 'rnd_Co6hnlBBegQUBehBt4s8LqAP98fI';
-
 app.get('/Services', async (req, res) => {
     try {
         const response = await axios.get('https://api.render.com/v1/services', {
